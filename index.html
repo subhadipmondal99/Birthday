@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday, Bhumika!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="poopol.mp3" type="audio/mpeg">
+    </audio>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="Video Project 1.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <div id="start-overlay">
+        <h1 class="intro-text">For You My Love</h1>
+        <button class="start-btn" onclick="initExperience()">Open Your Gift 🎁</button>
+    </div>
+
+    <canvas id="treeCanvas"></canvas>
+
+    <div class="container" id="main-container">
+        <div id="message-screen">
+            <h1 class="title">My Dearest Bhumika,</h1>
+            <div class="message-box">
+                <span id="typed-message" class="typed-text"></span><span id="cursor" class="cursor"></span>
+            </div>
+            <button id="nextMessageBtn" class="animated-button" style="display: none;">Continue</button>
+        </div>
+
+        <div id="final-screen" class="final-area" style="display: none;">
+            <div class="photo-frame">
+                <img src="c.jpg" alt="Bhumika">
+            </div>
+            <p id="closing-message" class="closing-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
