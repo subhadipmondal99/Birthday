@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Happy Birthday, Bhumika!</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div id="intro-layer">
+        <video id="intro-video" playsinline muted>
+            <source src="bintro.mp4" type="video/mp4">
+        </video>
+        <a href="javascript:void(0)" id="neon-next-btn" onclick="endIntro()" style="display: none;">
+            <span></span><span></span><span></span><span></span>
+            Next
+        </a>
+    </div>
 
     <audio id="bgMusic" loop>
         <source src="poopol.mp3" type="audio/mpeg">
@@ -18,7 +28,7 @@
     </video>
     <div class="video-overlay"></div>
 
-    <div id="start-overlay">
+    <div id="start-overlay" style="display: none;">
         <h1 class="intro-text">For You My Love</h1>
         <button class="start-btn" onclick="initExperience()">Open Your Gift 🎁</button>
     </div>
