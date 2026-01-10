@@ -29,23 +29,35 @@ function endIntro() {
     }, 800);
 }
 
+// --- UPDATED MESSAGES START ---
 const messages = [
     "Happy Birthday, my dearest Bhumika ❤️",
-    "You are not just my love, you are my home—the place where my heart feels safe and complete.",
-    "You are my peace in chaos, my smile on difficult days, and the reason my life feels meaningful.",
-    "Every single day, I thank God for bringing you into my life and trusting me with such a beautiful soul.",
-    "\nMy heart beats only for you. You are the reason I wake up with hope every morning and fall asleep with peace every night.",
-    "When I think of love, I see your smile. When I dream of the future, I see only you standing beside me.",
-    "\nI still remember the first time we met—it felt so natural, like my heart had been waiting for you all along.",
-    "From that moment, something changed inside me. Slowly, deeply, you became my happiness, my strength, and my everything.",
-    "\nOur journey has seen ups and downs, smiles and tears—but not even once did I think of leaving you.",
-    "Loving you is the most certain thing in my life. I promise to hold your hand through every season and every storm.",
-    "\nI cannot imagine my life without you. Without you, everything feels empty.",
+    "Subho jonmodin prio, Sarajibon Hasi khusi theko.",
+    "Valo theko.. karon tomar valo thaka tei to amar valo thaka.",
+    "Ajker din ta onke special tomar kache amar kacho, karon aj tumi jonmechile.",
+    "Hoy to tumi amar age ascho, ami tomar pore kintu tao hoy to ami tomar jonnoi eschi.",
+    "Tomke ghirei to sob amar valo laga kharap laga.",
+    "Ajker ei din a thakurer kache  bolbo valo reko thakur sob somoy hasi khusi rekho.",
+    "Jani hoy to ami kosto diya fali, amar karonei tumi kosto pao.",
+    "Kotha dichhi sona tomake r kosto debo na, sob somoy tomake valo basbo.",
+    "Buke kore agle rakbo, onek basi valo basbo.",
+    "\nJano babu jokhon tomar kache jai onke santi pai, tomar sathe thakte valo lage.",
+    "Tumi jokhon amake joriya dhoro sobtheke basi valo lage.",
+    "Tumi amake valobaso buji, tomar ador kheyal raka ami buji go.",
+    "Amio tomake onek basi valo basi go.",
+    "Ajker jomno dine kotha dao chare jabe na, sara ta jibon amar pase thake jabe.",
+    "Jedin Prothom tomake dekachilam mone hoyechilo jeno koto diner chena.",
+    "Tar por tomar sathe kotha bole mone hoyechilo tumi jeno amar moto.",
+    "Jano to babu ami onek lucky je ami tomake peyachi, tumi amar life a escho.",
+    "Jokhon ami valo basar kotha ta vabi tohokon tomar hasi maka muk ta mone pore jai.",
+    "\nI promise to hold your hand through every season and every storm.",
+    "I cannot imagine my life without you. Without you, everything feels empty.",
     "Among everything this world can offer, I choose you—always and forever.",
-    "\nMay your birthday be filled with love, warmth, and all the happiness your heart deserves.",
+    "May your birthday be filled with love, warmth, and all the happiness your heart deserves.",
     "I love you endlessly, today, tomorrow, and for the rest of my life.",
-    "\nHappy Birthday, my forever, my soulmate 💫"
+    "Happy Birthday, my forever, my soulmate 💫"
 ];
+// --- UPDATED MESSAGES END ---
 
 const finalClosing = "With all my love,\n Subhadip";
 let messageIndex = 0;
@@ -81,11 +93,10 @@ function typeLine() {
             
             messageBox.scrollTop = messageBox.scrollHeight;
 
-            // Softness logic: adjust speed based on punctuation
             let delay = 45; 
-            if (char === "," || char === "—") delay = 400; // Natural pause
-            if (char === "." || char === "❤️" || char === "💫") delay = 800; // Emotional pause
-            if (currentText.includes("I love you")) delay = 100; // Slower for deep words
+            if (char === "," || char === "—") delay = 400; 
+            if (char === "." || char === "❤️" || char === "💫") delay = 800; 
+            if (currentText.includes("I love you")) delay = 100; 
 
             setTimeout(typeLine, delay); 
         } else {
