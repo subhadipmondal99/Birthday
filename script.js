@@ -49,10 +49,11 @@ const messages = [
     "Jedin Prothom tomake dekachilam mone hoyechilo jeno koto diner chena.",
     "Tar por tomar sathe kotha bole mone hoyechilo tumi jeno amar moto.",
     "Jano to babu ami onek lucky je ami tomake peyachi, tumi amar life a escho.",
-    "Jokhon ami valo basar kotha ta vabi tohokon tomar hasi maka muk ta mone pore jai.",
+    "Jokhon ami valobasar kotha ta vabi tohokon tomar hasi maka muk ta mone pore jai.",
+    "\nEktu english try korci 😁😁😊",
     "\nI promise to hold your hand through every season and every storm.",
     "I cannot imagine my life without you. Without you, everything feels empty.",
-    "Among everything this world can offer, I choose you—always and forever.",
+    "Among everything this world can offer, I choose you always and forever.",
     "May your birthday be filled with love, warmth, and all the happiness your heart deserves.",
     "I love you endlessly, today, tomorrow, and for the rest of my life.",
     "Happy Birthday, my forever, my soulmate 💫"
@@ -149,3 +150,4 @@ class Tree {
         requestAnimationFrame(() => this.run());
     }
 }
+
